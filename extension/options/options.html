@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Browser Player · Impostazioni</title>
+    <link rel="stylesheet" href="options.css" />
+    <script type="module" src="options.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Browser Player</h1>
+
+      <section>
+        <h2>ElevenLabs</h2>
+        <label class="field">
+          <span>Chiave API</span>
+          <input type="password" id="key" autocomplete="off" spellcheck="false" placeholder="sk_…" />
+        </label>
+        <div class="row">
+          <button type="button" class="primary" id="saveKey">Salva chiave</button>
+          <button type="button" id="testKey">Verifica</button>
+        </div>
+        <p class="status" id="keyStatus"></p>
+        <p class="hint">La chiave resta nella memoria locale dell'estensione e viene inviata solo ad api.elevenlabs.io.</p>
+      </section>
+
+      <section>
+        <h2>Player</h2>
+        <label class="check"><input type="checkbox" id="autoNext" /> Passa da solo all'episodio successivo</label>
+        <label class="field inline">
+          <span>Salto sigla (secondi)</span>
+          <input type="number" id="skipSeconds" min="5" max="300" step="1" />
+        </label>
+      </section>
+
+      <section>
+        <h2>Doppiaggio</h2>
+        <label class="field inline">
+          <span>Durata della prova (minuti)</span>
+          <input type="number" id="dubTestMinutes" min="1" max="30" step="1" />
+        </label>
+        <label class="check"><input type="checkbox" id="dubWatermark" /> Chiedi il watermark (su alcuni piani costa meno)</label>
+      </section>
+
+      <p class="status" id="saved"></p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.env
+out/
+node_modules/
+*.zip
+dist/
+
+# Strumenti interni M's Works (skill msworks-project-setup): restano in locale
+.claude/assets/
+.claude/scripts/

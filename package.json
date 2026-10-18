@@ -1,0 +1,16 @@
+{
+  "name": "browser-player",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Estensione Chrome che sostituisce il player dei siti di streaming (AnimeWorld per primo) con un player unico, con doppiaggio ElevenLabs.",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "chiave": "node scripts/importa-chiave.mjs",
+    "dub-test": "node --env-file=.env scripts/dub-test.mjs",
+    "pacchetto": "powershell -NoProfile -Command \"$v=(Get-Content extension/manifest.json -Raw|ConvertFrom-Json).version; New-Item -ItemType Directory -Force dist|Out-Null; Compress-Archive -Force -Path extension/* -DestinationPath dist/browser-player-$v.zip\""
+  }
+}
