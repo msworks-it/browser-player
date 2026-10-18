@@ -73,6 +73,12 @@ dev/         pagina e finto chrome.storage del banco di prova
 2. Aggiungi il sito a `content_scripts` e `web_accessible_resources` in `manifest.json`.
 3. Documenta le API del sito in `.claude/integrations/<sito>.md`.
 
+## Contribuire e licenza
+Fork e pull request sono benvenuti: le indicazioni sono in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Il progetto è distribuito con licenza [Apache 2.0](LICENSE). Puoi usarlo, modificarlo e ridistribuirlo, anche a
+fini commerciali, purché ogni copia o derivato conservi il file [NOTICE](NOTICE) con i crediti a M's Works.
+
 ## Roadmap
 In [`.claude/project/09-roadmap.md`](.claude/project/09-roadmap.md): taglio del tratto da doppiare direttamente nel
 browser (oggi ElevenLabs scarica l'intero file ed è lento), adapter generico per qualsiasi `<video>`, HLS, Firefox.

@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Estensione Chrome che sostituisce il player dei siti di streaming (AnimeWorld per primo) con un player unico, con doppiaggio ElevenLabs.",
+  "license": "Apache-2.0",
+  "author": "M's Works <antonio.murabito@msworks.it> (https://msworks.it)",
+  "repository": "github:msworks-it/browser-player",
   "engines": {
     "node": ">=20.9"
   },

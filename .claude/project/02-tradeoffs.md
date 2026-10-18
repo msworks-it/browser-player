@@ -55,6 +55,15 @@
   intercettati) va controllato a occhio nella pagina reale.
 - **Data:** 2026-10-18
 
+### D-007 — Licenza Apache 2.0 con NOTICE
+- **Contesto:** repo pubblico su `msworks-it`; si vogliono fork e contributi, sempre con i crediti a M's Works.
+- **Opzioni:** A) MIT (basta conservare la riga di copyright) B) Apache 2.0 + NOTICE C) licenza copyleft (GPL).
+- **Scelta:** B.
+- **Motivo:** la Sezione 4(d) obbliga a conservare il file NOTICE in ogni ridistribuzione e derivato (credito
+  visibile a M's Works); la Sezione 5 copre i contributi; permette fork e uso commerciale senza imporre copyleft.
+- **Conseguenze:** `LICENSE` (testo ufficiale), `NOTICE`, `CONTRIBUTING.md`; `license: Apache-2.0` in `package.json`.
+- **Data:** 2026-10-18
+
 ## Misure (2026-10-18, episodio 5, 60 s, ja→it, piano Pro)
 | Modo | Attesa totale | Note |
 |---|---|---|

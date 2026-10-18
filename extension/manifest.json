@@ -3,10 +3,22 @@
   "name": "Browser Player",
   "version": "0.1.0",
   "description": "Sostituisce il player dei siti di streaming con un player unico: cambio episodi rapido, ripresa, doppiaggio ElevenLabs.",
+  "author": {
+    "email": "antonio.murabito@msworks.it"
+  },
+  "homepage_url": "https://github.com/msworks-it/browser-player",
   "minimum_chrome_version": "116",
-  "permissions": ["storage", "unlimitedStorage"],
-  "host_permissions": ["https://api.elevenlabs.io/*"],
-  "options_ui": { "page": "options/options.html", "open_in_tab": true },
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://api.elevenlabs.io/*"
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
   "content_scripts": [
     {
       "matches": [
@@ -15,14 +27,21 @@
         "*://*.animeworld.tv/play/*",
         "*://*.animeworld.it/play/*"
       ],
-      "js": ["content/bridge.js", "content/animeworld.js"],
-      "css": ["content/bridge.css"],
+      "js": [
+        "content/bridge.js",
+        "content/animeworld.js"
+      ],
+      "css": [
+        "content/bridge.css"
+      ],
       "run_at": "document_idle"
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["player/player.html"],
+      "resources": [
+        "player/player.html"
+      ],
       "matches": [
         "*://*.animeworld.ac/*",
         "*://*.animeworld.so/*",
